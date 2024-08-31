@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="./AboutMe.html">Datos personales</a></li>
+                    <li><a href="./skills.html">Conocimientos</a></li>
+                    <li><a href="./CurriculumVitae.html">Curriculum</a></li>
+                    <li><a href="./portfolio.html">Portfolio</a></li>
+                    <li><a href="./Services.html">Servicios</a></li>
+                    <li><a href="./Testimonials.html">Testimonios</a></li>
+                    <li><a href="./Contact.html">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main id="content">
+        <h1>Curriculum vitae</h1>
+        <div>
+            <h2>Quien soy</h2>
+            <p>
+                Soy un desarrollador web con formación académica en la Universidad Argentina de la Empresa (UADE), donde adquirí una sólida base en desarrollo de software. Mi experiencia laboral ha sido principalmente en el ámbito freelance, 
+                enfocándome en proyectos de desarrollo web para e-commerce. He trabajado tanto en el front-end como en el back-end, utilizando tecnologías modernas para crear soluciones completas y eficientes.
+            </p>
+        </div>
+        <div>
+            <h2>Experiencia laboral</h2>
+            <p>
+                He trabajado como freelance, desarrollando soluciones web para tiendas en línea y otras aplicaciones. Mi enfoque ha sido en ofrecer servicios de alta calidad, desde la planificación y diseño hasta la implementación y mantenimiento. He participado en proyectos donde he integrado sistemas de pago, manejado bases de datos y optimizado 
+                el rendimiento de las aplicaciones para garantizar una experiencia de usuario fluida.
+            </p>
+        </div>
+        <div>
+            <h2>Habilidades</h2>
+            <ul>
+                <li><strong>Front-end:</strong> Desarrollo de interfaces de usuario dinámicas y responsivas utilizando React.</li>
+                <li><strong>Back-end:</strong> Creación de APIs robustas y escalables con Node.js y Express, además de experiencia en desarrollo con Spring Boot para aplicaciones Java.</li>
+                <li><strong>Bases de Datos:</strong> Gestión de bases de datos SQL y NoSQL (principalmente MongoDB), asegurando el almacenamiento y recuperación eficiente de datos.</li>
+                <li><strong>Control de Versiones:</strong> Uso de Git para el manejo y control de versiones, facilitando la colaboración en equipo y el seguimiento de cambios en los proyectos.</li>
+            </ul>
+        </div>
+        <div>
+            <h2>Educacion</h2>
+            <ul>
+                <li><strong>Universidad Argentina de la Empresa (UADE):</strong> Formación en desarrollo de software, con un enfoque en tecnologías web y bases de datos.</li>
+            </ul>
+        </div>
+        <button id="download">Descargar PDF</button>
+    </main>
+    <footer></footer>
+
+    <script>
+        document.getElementById('download').addEventListener('click', () => {
+            const { jsPDF } = window.jspdf;
+            html2canvas(document.getElementById('content')).then(canvas => {
+                const imgData = canvas.toDataURL('image/png');
+                const doc = new jsPDF();
+                doc.addImage(imgData, 'PNG', 10, 10);
+                doc.save('documento.pdf');
+            });
+        });
+    </script>
+</body>
+</html>
