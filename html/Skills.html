@@ -3,45 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/skills.css">
     <title>Document</title>
 </head>
 <body>
     <header>
         <nav>
-            <div>
-                <ul>
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="./AboutMe.html">Datos personales</a></li>
-                    <li><a href="./skills.html">Conocimientos</a></li>
-                    <li><a href="./CurriculumVitae.html">Curriculum</a></li>
-                    <li><a href="./portfolio.html">Portfolio</a></li>
-                    <li><a href="./Services.html">Servicios</a></li>
-                    <li><a href="./Testimonials.html">Testimonios</a></li>
-                    <li><a href="./Contact.html">Contacto</a></li>
+            <div class="nav__div">
+                <ul class="div__ul">
+                    <li class="ul--li" first_child="first_child"><a href="../index.html">Inicio</a></li>
+                    <li class="ul--li"><a href="./AboutMe.html">Datos personales</a></li>
+                    <li class="ul--li"><a href="./skills.html">Conocimientos</a></li>
+                    <li class="ul--li"><a href="./CurriculumVitae.html">Curriculum</a></li>
+                    <li class="ul--li"><a href="./portfolio.html">Portfolio</a></li>
+                    <li class="ul--li"><a href="./Services.html">Servicios</a></li>
+                    <li class="ul--li"><a href="./Testimonials.html">Testimonios</a></li>
+                    <li class="ul--li"><a href="./Contact.html">Contacto</a></li>
                 </ul>
         </nav>
     </header>
     <main>
-    <section>
-            <div>
+    <section class="section__title">
+            <div class="title__container">
                 <h1>Habilidades</h1>
+            </div> 
+    </section>
+    <section class="section__habilities">
+        <div class="habilities_container">
+            <div class="hability_odd_container_java" java="java">
+                <div  class='img__container'><img src="../assets/img/java.jpg"></div>
+                <div class="lang__container"><h3>Java</h3></div>
             </div>
-            <div>
-                <div>
-                    <h2>LENGUAJES</h2>
-                    <h3>JAVA, Python, C#, C++, Javascript</h3>
-                    <h2>BASES DE DATOS</h2>
-                    <h3>RELATIONAL - NONE RELATIONAL</h3>
-                    <h2>IDIOMAS</h2>
-                    <h3>Ingles C1 - Deutsch: A1</h3>
-                    <h2>STACKS</h2>
-                    <h3>React js, Spring boot, Express</h3>
-                </div>
-                <div>
-                    
-                </div>
+            <div class="hability_pair_container_python">
+                <div class='img__container'><img src="../assets/img/python.png"></div>
+                <div class="lang__container" python="python"><h3>Py<span>thon</span></h3></div>
             </div>
-        </section>
+            <div class="hability_odd_container_js">
+                <div  class='img__container'><img src="../assets/img/js.png"></div>
+                <div class="lang__container" js="js"><h3>JavaScript</h3></div>
+            </div>
+            <div class="hability_pair_container_csharp">
+                <div  class='img__container'><img src="../assets/img/csharp.jpg"></div>
+                <div class="lang__container" csharp="csharp"><h3>C#</h3></div>
+            </div>
+            <div class="hability_odd_container_cpp">
+                <div  class='img__container'><img src="../assets/img/c++.jpg"></div>
+                <div class="lang__container" cpp="cpp"><h3>C++</h3></div>
+            </div>
+            
+
+        </div>
+    </section>
 
     </main>
     <footer>
