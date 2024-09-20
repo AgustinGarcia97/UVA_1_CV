@@ -1,0 +1,186 @@
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    margin-top: 40px;
+    height: auto;
+    justify-content: start;
+    align-items: center;
+    gap:50px;
+    background-image: linear-gradient(to top, #f43b47 0%, #453a94 100%);
+    width: 70%;
+    box-shadow: 0px 0px 30px 15px rgba(196, 193, 193, 0.662);
+    
+}
+
+main p {
+    width:70%;
+    text-align: center;
+    font-size: 25px;
+}
+
+main h1{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 50px;
+    text-shadow: 
+        -1px -1px 0 #4e4d4d,  
+         1px -1px 0 #4e4d4d,
+        -1px  1px 0 #4e4d4d,
+         1px  1px 0 #4e4d4d;
+}
+
+main div {
+    display: flex;
+    flex-direction: column;
+    gap:50px;
+    justify-content: center;
+    align-items: center;
+}
+
+main ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    gap:50px;
+    background-image: linear-gradient(to top, #f43b47 0%, #453a94 100%);
+    padding:20px;
+
+}
+
+main ul li {
+    list-style: none;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:50px;
+    width:60%;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.247);
+    padding:30px;
+    box-shadow: 0 4px 20px rgba(147, 146, 146, 0.5);
+    
+}
+
+ul li p {
+    width: 90%;
+    font-size: 25px;
+}
+
+ul li h2 {
+    box-shadow: 0 4px 20px rgba(147, 146, 146, 0.5);
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 30px;
+}
+
+@media (max-width: 600px) {
+    main {
+        width: 90%;
+        gap: 30px;
+    }
+
+    main p {
+        font-size: 15px;
+        width: 80%;
+    }
+
+    main h1 {
+        font-size: 30px;
+        padding:10px;
+    }
+
+    main ul {
+        width: 80%;
+    }
+
+    main ul li {
+        width: 95%;
+        height: auto;
+        gap: 30px;
+    }
+
+    ul li h2 {
+        font-size: 20px;
+    }
+
+    ul li p {
+        font-size: 18px;
+    }
+}
+
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    main {
+        width: 85%;
+        gap: 40px;
+    }
+
+    main p {
+        font-size: 22px;
+    }
+
+    main h1 {
+        font-size: 40px;
+        padding:20px;
+    }
+
+    main ul {
+        width: 80%;
+    }
+
+    main ul li {
+        width: 80%;
+        height: auto;
+        gap: 40px;
+    }
+
+    ul li h2 {
+        font-size: 28px;
+    }
+
+    ul li p {
+        font-size: 20px;
+    }
+}
+
+
+@media (min-width: 1025px) {
+    main {
+        width: 70%;
+        gap: 50px;
+    }
+
+    main p {
+        font-size: 25px;
+    }
+
+    main h1 {
+        font-size: 50px;
+        padding:20px;
+    }
+
+    main ul {
+        width: 90%;
+    }
+
+    main ul li {
+        width: 60%;
+        height:600px;
+        gap: 50px;
+    }
+
+    ul li h2 {
+        font-size: 30px;
+    }
+
+    ul li p {
+        font-size: 25px;
+    }
+}
