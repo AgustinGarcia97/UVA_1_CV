@@ -127,7 +127,7 @@ button:hover {
 
 @media (max-width: 600px) {
     .info_container, .socialmedia_container, .form_container {
-        width: 90%;
+        width: 95%;
         
 
     }
@@ -146,6 +146,11 @@ button:hover {
     h2 {
         font-size: 20px;
         text-align: center;
+    }
+
+    .info_container p{
+        width: 100%;
+       
     }
     
 
@@ -184,6 +189,7 @@ button:hover {
     }
 }
 
+/* Estilos para pantallas medianas (tablets) */
 @media (min-width: 601px) and (max-width: 1024px) {
     .info_container, .socialmedia_container, .form_container {
         width: 85%;

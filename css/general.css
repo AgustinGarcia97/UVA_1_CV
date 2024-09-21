@@ -112,3 +112,50 @@ footer{
     background-color: black;
     width: 100%;
 }
+
+@media (max-width: 600px) {
+    header{
+        height:auto;
+        width: 100%;
+    }
+    nav{
+        width: 100%;
+        padding: 20px;
+    }
+
+    .nav__div{
+      
+       width: 100%;
+
+    }
+    .div__ul{
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+     
+    }
+    header nav div ul{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    header nav div ul li{
+        text-align: center;
+        width: 100%;
+       
+        margin:0px;
+    }
+
+    .ul--li{
+        width: 40%;
+    }
+
+    header nav div .ul--li:first-child{
+        margin-right: 0;
+        width: 40%;
+        margin:0px;
+    }
+}

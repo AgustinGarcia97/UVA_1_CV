@@ -109,16 +109,37 @@ button{
     .curriculum_section {
         width: 90%; 
         padding: 10px;
+        justify-content: center;
     }
     
     .title_container {
         font-size: 30px; 
+        text-align: center;
+    }
+
+    .intro_container{
+        justify-content: center;
+    }
+
+    section div h2 {
+        text-align: center;
     }
 
     .intro_container p, .exp_container p {
         width: 100%; 
         padding: 5px;
+        text-align: center;
     }
+
+    .skills_container ul li {
+        width: 100%;
+        text-align: center;
+    }
+.education_container ul li {
+    text-align: center;
+
+    width: 100%;
+}
 
     button {
         width: 100%; 
